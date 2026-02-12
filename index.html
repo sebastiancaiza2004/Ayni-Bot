@@ -1,206 +1,173 @@
-**<!DOCTYPE html>**
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayni-Bot | Proyecto 36458</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:70px 20px;
+}
+
+h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:18px;
+    opacity:0.8;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    color:#333;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    margin-top:0;
+    color:#2c5364;
+}
+
+.section{
+    width:90%;
+    max-width:900px;
+    margin:60px auto;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+    margin-top:60px;
+    font-size:14px;
+    letter-spacing:1px;
+    opacity:0.85;
+}
+
+button{
+    background:#2c5364;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1a2f3c;
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AYNI-BOT</h1>
+    <p class="subtitle">Sistema Robótico de Monitoreo Inteligente</p>
+    <p><strong>Proyecto Nº 36458</strong></p>
+</header>
+
+<div class="section">
+    <h2>Descripción del Sistema</h2>
+    <p>
+        Ayni-Bot es un robot diseñado para el monitoreo de la calidad del agua mediante
+        sensores electrónicos que analizan variables físicas y químicas en tiempo real.
+        El sistema permite la visualización remota de datos para control y supervisión.
+    </p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>EC</h2>
+        <p><strong>Conductividad Eléctrica</strong></p>
+        <p>Mide la capacidad del agua para conducir electricidad debido a sales disueltas.</p>
+    </div>
+
+    <div class="card">
+        <h2>TDS</h2>
+        <p><strong>Sólidos Totales Disueltos</strong></p>
+        <p>Indica la concentración de minerales y partículas disueltas en el agua.</p>
+    </div>
+
+    <div class="card">
+        <h2>Temperatura</h2>
+        <p><strong>Variable Biológica Clave</strong></p>
+        <p>Influye en reacciones químicas y procesos biológicos del ecosistema acuático.</p>
+    </div>
+
+    <div class="card">
+        <h2>Turbidez</h2>
+        <p><strong>Nivel de Opacidad</strong></p>
+        <p>Evalúa la cantidad de partículas suspendidas en el agua.</p>
+    </div>
+
+    <div class="card">
+        <h2>pH</h2>
+        <p><strong>Acidez o Alcalinidad</strong></p>
+        <p>Determina el equilibrio químico del agua y su impacto ambiental.</p>
+    </div>
+
+</div>
+
+<div class="section">
+    <h2>Arquitectura del Sistema</h2>
+    <p>
+        El robot integra sensores electrónicos, sistema de procesamiento de datos
+        y comunicación IoT para transmisión en tiempo real hacia una plataforma
+        de monitoreo remoto.
+    </p>
+
+    <br>
+    <button onclick="alert('Plataforma IoT en desarrollo 🚀')">
+        Acceder a Plataforma
+    </button>
+</div>
+
+<footer>
+    Ayni-Bot - Sistema Robótico de Monitoreo de Calidad del Agua  
+    <br>
+    Proyecto Nº 36458
+</footer>
+
+</body>
+</html>
 
-**<html lang="es">**
-
-**<head>**
-
-**<meta charset="UTF-8">**
-
-**<meta name="viewport" content="width=device-width, initial-scale=1.0">**
-
-**<title>AYNI-BOT</title>**
-
-
-
-**<style>**
-
-**body{**
-
-    **margin:0;**
-
-    **font-family: Arial, sans-serif;**
-
-    **background-color:#0f1f3d;**
-
-    **color:white;**
-
-    **text-align:center;**
-
-**}**
-
-
-
-**header{**
-
-    **background:#123456;**
-
-    **padding:20px;**
-
-**}**
-
-
-
-**h1{**
-
-    **color:#00d084;**
-
-    **font-size:40px;**
-
-**}**
-
-
-
-**.section{**
-
-    **padding:40px 20px;**
-
-**}**
-
-
-
-**.card{**
-
-    **background:#1c2e5a;**
-
-    **padding:20px;**
-
-    **margin:15px;**
-
-    **border-radius:10px;**
-
-    **display:inline-block;**
-
-    **width:250px;**
-
-**}**
-
-
-
-**.footer{**
-
-    **background:#0a1428;**
-
-    **padding:20px;**
-
-    **margin-top:30px;**
-
-**}**
-
-**</style>**
-
-**</head>**
-
-
-
-**<body>**
-
-
-
-**<header>**
-
-    **<h1>AYNI-BOT</h1>**
-
-    **<p>Sistema Robótico Autónomo de Monitoreo de Calidad de Agua</p>**
-
-    **<p><strong>Número de Proyecto: 36458</strong></p>**
-
-**</header>**
-
-
-
-**<div class="section">**
-
-    **<h2>¿Qué mide?</h2>**
-
-
-
-    **<div class="card">**
-
-        **<h3>Nitrato</h3>**
-
-        **<p>Detecta contaminación por fertilizantes.</p>**
-
-    **</div>**
-
-
-
-    **<div class="card">**
-
-        **<h3>Salinidad</h3>**
-
-        **<p>Mide concentración de sales.</p>**
-
-    **</div>**
-
-
-
-    **<div class="card">**
-
-        **<h3>pH</h3>**
-
-        **<p>Nivel de acidez o alcalinidad.</p>**
-
-    **</div>**
-
-
-
-    **<div class="card">**
-
-        **<h3>EC</h3>**
-
-        **<p>Conductividad eléctrica del agua.</p>**
-
-    **</div>**
-
-
-
-    **<div class="card">**
-
-        **<h3>TDS</h3>**
-
-        **<p>Sólidos totales disueltos.</p>**
-
-    **</div>**
-
-
-
-    **<div class="card">**
-
-        **<h3>Temperatura</h3>**
-
-        **<p>Influye en procesos biológicos.</p>**
-
-    **</div>**
-
-**</div>**
-
-
-
-**<div class="section">**
-
-    **<h2>¿Por qué es importante?</h2>**
-
-    **<p>✔ Monitoreo ambiental</p>**
-
-    **<p>✔ Detección temprana de contaminación</p>**
-
-    **<p>✔ Datos en tiempo real</p>**
-
-    **<p>✔ Análisis remoto con Ubidots</p>**
-
-**</div>**
-
-
-
-**<div class="footer">**
-
-    **<p>Proyecto AYNI-BOT © 2026</p>**
-
-**</div>**
-
-
-
-**</body>**
-
-**</html>**
 
